@@ -1,0 +1,332 @@
+Is anyone using Mojo for production?
+
+What was the magic env variable to get more dispatcher debugging?
+
+can a mojo app be a mix of ::lite and normal mojolicious ?
+
+mojolicious has a concept of form handling?
+
+what does shagadelic mean?
+
+but doesn't 'shagadelic' means fuckable?
+
+didn'tsomeone have a vim syntax for epl
+
+okay, where the actual manual?
+
+does mojo have forward and detach functions like cat?
+
+can mojo be ran as a cgi script? for shared hosting services?
+
+anything noteworthy been built using mojo yet?
+
+does mojo natively support sessions?
+
+how can i help out or otherwise support this project?
+
+Hello there. Does Mojo has ORM?
+
+Do you really only depend on version zero of everything?
+
+does mojo have "models" like catalyst?
+
+mojo does it's own accessor stuff?
+
+Has sri released recently?
+
+what am I doing wrong?
+
+Does anybody know how the animated gifs on the mojolicious webpage were
+created?
+
+does mojo do any gzip/deflating?
+
+are there bridge examples anywhere ?
+
+mojo distinguishes between /url/ and /url ?
+
+was that thing developed by a bunch of monkeys?
+
+Thoughts?
+
+seems like it's fucked inside mojo?
+
+is software ever "finished"?
+
+how is your documentation process is going?
+
+is there an example of a json renderer anywhere ?
+
+Could you at least write 5 paragraphs in the manual getting started page?
+
+is the mojolicious command line tool?
+
+Where do you want bug reports?
+
+mojo's license is AL, any reason you didn't go with same as perl? (GPL or AL)
+
+Herr Mojo?
+
+i just switched to mojo, i am redoing my personal website. should i use mojo or
+mojo lite for this task?
+
+what exactly does the "shagadelic" method do?
+
+am i doing something wrong, perldoc Mojo::Manual::Mojolicious does'nt contain
+anything useful?
+
+where is the documentation for mojo?
+
+how can i set content-type in lite app?
+
+Anyone here use git tags?
+
+What's your "workflow" to submit to CPAN?
+
+why would you need that much speed?
+
+How can I construct a pattern that matches '/'?
+
+whant to port mojo to perl6?
+
+Does unsupported mean "don't use" or just "swim at your own risk"?
+
+what would be the point of adding a feature if it's not tested and might break at any time?
+
+a simple mojo wiki anyone?
+
+where is all this great documentation i've been hearing about?
+
+stylish pdf mojo cheatsheet?
+
+does mojo have an email module?
+
+anyone awake here?
+
+how do run Mojo as a cgi script, using a browser?
+
+can't you use host => qr// with route?
+
+how would you redirect in mojo?
+
+does mojo have a built-in way to add accessors to your app?
+
+where do i define the db connection?
+
+Does Mojolicous reload yourself after file changing?
+
+is there really that much politics in programming?
+
+How to include other files inside epl?
+
+is it a coinsidence that there is a Catalyst wiki called mojomojo?
+
+Do you plan use Moose in Mojo?
+
+does Mojo::Loader catch syntax errors?
+
+Where can I see an example of Mojolicious + MojoX::Session?
+
+today we switch to python?
+
+still awake?
+
+is there an easy way to change the templates base dir for Mojolicious::Lite?
+
+What's an attribute 'name' for? In routes. Where should I use it?
+
+is it possible with Mojo::JSON to check the syntax?
+
+Whats best practice for mojo and mod_perl2?
+
+How to get a list of all names only of parameters?
+
+Are you marcus ramburg?
+
+do we have usable json in mojo yet?
+
+what is epl short for? english premier league?
+
+I want to custamize Mojo::Template encoding. Is there the way to do it through
+Mojolicious?
+
+what's the latest status on mojolicious documentation?
+
+iI see you're about keeping it free of dependencies - how do you feel about
+people developing extensions?
+
+I don't understand waypoint and bridge. When do I use waypoint and bridge?
+
+what for should i use html_escape and xml_escape?
+
+what do you mean by 'nothing works'?
+
+how can I help you?
+
+how's the new docs coming along?
+
+How to render data/plainfile.html in template?
+
+web in a box?
+
+Can I include a second template in a Mojo::Template file?
+
+how's your month of docs going?
+
+How to get an absolute path of app home?
+
+How to add charset utf-8 by default in headers?
+
+how do I get params inside a controller?
+
+Where is the test server's document root? Is it just in whatever directory you
+invoke it?
+
+anyone know how I can get the remote IP address within a Mojo controller?
+
+how do I access the transaction from within a handler in the controller?
+
+Has anyone used mojolicious and the Petal templating system together? Would it
+be tricky to do?
+
+How to use MyApp::CARROT as controller?
+
+Anyone know how I can stuff raw HTML into a Mojolicious template without it
+getting escaped?
+
+Does ep stand for something?
+
+so I can easily convert a cgi based app to mojo ?
+
+when do you plan 1.0?
+
+Does anyone know why I might be having trouble accessing files within my
+'public' directory?  For some reason I'm unable to get my public js and css
+files to load.
+
+I have 5 actions for one route. And I have 5 $self->render( ... ) at the end of
+every action. ;) How to render universally? For example to run a function to
+render depending on a parameter from stash?
+
+Bridge is used before route. Is it available to run action after route?
+
+how do I set a cookie from a mojolicious controller?
+
+how do I do an external redirect from a controller?
+
+Does setting $self->res->body bypass the rendering in
+MojoX::Dispatcher::Routes::dispatch ?
+
+what happens when you do $tx->pause? switching to other transactions?
+
+Anyone have a favourite i18n module that's nice to use / plays nice with
+mojo(licious)?
+
+there's a mojo modules page?
+
+going for the advent calendar plan after all?
+
+doesn't mojo have an async http client built in now?
+
+Any ideas about how hard it would be to embed a mojo app in a catalyst app?
+
+How to create a "https" link via url_for?
+
+Is it available to create a full link (with http://) via url_for?
+
+MP3 streaming client?
+
+How to use ladders?
+
+anybody using mojo for high-trafic sites? What's the performance like?
+
+Is there a way to access the route's name from within the .ep templates?
+
+Mojolicious rules. Why people in the perl world don't unserstand this simple
+thing?
+
+What is the difference between dispatch() and process()?
+
+Can I create POST request emulating HTML form?
+
+Are there any bigger example application? Or even real ones?
+
+Could someone tell me how to run Mojolicious with fastcgi?
+
+--address. It can't listen unix socket?
+
+what about nginx & mojo fcgi? Must it have something special in fastcgi
+paramenters?
+
+so what would be the fastest way to get up to speed on Mojo?
+
+I want only 2 or 3 processes of fcgi, how to run? I tried --servers 2, but again
+get 6 processes.
+
+btw, this is the most jabber I've seen on #mojo in a week. is it usually quiet?
+
+is there a mojo component to manage users authentifications and sessions ?
+
+why is mojo telling me "It looks like you don't have the Mojo Framework
+installed." even though I just installed it?
+
+how do I tell Mojolicious::Lite that the content I'm about to send is
+"application/xml"?
+
+With $client->post, where do I put my post data in?
+
+How can i determine name of current route?
+
+How to reload mojolicious application? What a signal should I send to a process?
+
+is there somewhere to paste?
+
+I just want to run a Mojo app on a single location within a site... is this
+possible?
+
+how can one add addional params when loading a plugin?
+
+does Mojo::Client follow redirects?
+
+Can you explain to newbie how can i pass additional fcgi params to mojolicious
+app?
+
+Access to raw enviroments is not available?
+
+How to run Mojolicious::Lite on different adderess:port?
+
+Is there a page with list of sites build on mojo?
+
+does anyone know if it is possible to use Template::Toolkit with
+Mojolicious::Lite?
+
+Is there way to clear template cache of mojo server without restarting server?
+
+how can one load a plugin with a different namespace?
+
+inside mojo, is there a better way to report an error but calling die?
+
+Are there any thoughts or ideas about using Mojo with Moose or at least Mouse?
+
+is there a startup sub for mojo lite apps?
+
+Could someone explain to me what waypoint() does?
+
+Is there a way to specify query parameters in url_for, or do I need to handle
+that myself?
+
+all new to mojo, any tutorials about ?
+
+do you tweet?
+
+btw are u looking for contributors, if so how ?
+
+when should one use charset plugin?
+
+can someone make this work?
+
+somehow set headers having a hashref without iterating?
+
+Do you plan have a talk about Mojo on any Perl workshop or YAPC?
+
+are there reserved stash keys?
