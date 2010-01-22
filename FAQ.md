@@ -6,65 +6,65 @@ __What was the magic env variable to get more dispatcher debugging?__
 
 There is a lot dispatching logging in development mode. Make sure to check your log file and state.
 
-__can a mojo app be a mix of ::lite and normal mojolicious ?__
+__Can a Mojo app be a mix of ::Lite and normal Mojolicious ?__
 
-Yes, you can. You can start writing you app as a ::lite application and step by step grow to a normal one. One thing to remember is that there can be only one entry point, but you can share templates and controllers.
+Yes, it can. You can start writing you app as a ::Lite application and step by step grow to a normal one. One thing to remember is that there can be only one entry point, but you can share templates and controllers.
 
-__mojolicious has a concept of form handling?__
+__Does Mojolicious have a concept of form handling?__
 
 No. Mojolicious is just a framework that doesn't get in your way. There are many form handling modules on CPAN.
 
-__what does shagadelic mean?__
+__What does 'shagadelic' mean?__
 
 http://www.urbandictionary.com/define.php?term=shagadelic
 
-__but doesn't 'shagadelic' means fuckable?__
+__But doesn't 'shagadelic' mean fuckable?__
 
 Not really.
 
-__didn't someone have a vim syntax for epl__
+__Didn't someone have a vim syntax for epl?__
 
 http://github.com/korshak/Vim-Mojo-Data-syntax
 
-__okay, where the actual manual?__
+__Okay, where the actual manual?__
 
 It is being written.
 
-__does mojo have forward and detach functions like cat?__
+__Does Mojo have forward and detach functions like cat?__
 
 No it doesn't.
 
-__can mojo be ran as a cgi script? for shared hosting services?__
+__Can Mojo be ran as a CGI script? For shared hosting services?__
 
 Sure.
 
-__anything noteworthy been built using mojo yet?__
+__Anything noteworthy built using Mojo yet?__
 
 Bootylicious blog engine
-Contenticious cms
+Contenticious CMS
 Pastelicious paste service
 
-__does mojo natively support sessions?__
+__Does Mojo natively support sessions?__
 
 No. But you can use MojoX::Session.
 
-__how can i help out or otherwise support this project?__
+__How can I help out or otherwise support this project?__
 
-Just use it and report bugs and ask for features. We are always glad to help.
+Just use it, report bugs and ask for features. We are always glad to help.
 
-__Hello there. Does Mojo has ORM?__
+__Hello there. Does Mojo have ORM?__
 
-No. But there are a lot of ORMs at CPAN.
+No. But there are a lot of ORMs on CPAN.
 
 __Do you really only depend on version zero of everything?__
 
 Besides Perl 5.8.1.
 
-__does mojo have "models" like catalyst?__
+__Does Mojo have "models" like Catalyst?__
 
 No. Why use additional abstract layer when you can just 'use' your model in controller?
 
-__mojo does it's own accessor stuff?__
+__Mojo does its own accessor stuff?__
 
 Yes. Mojo::Base provides basic accessors.
 
@@ -72,53 +72,53 @@ __Has sri released recently?__
 
 Release cycle is a subject to change.
 
-__what am I doing wrong?__
+__What am I doing wrong?__
 
-Could be anything. If you thinkg that something is wrong, write a tests app and drop a line to the mail list or irc channel.
+Could be anything. If you think that something is wrong, write a test app and drop a line to the mailing list or IRC channel.
 
-__Does anybody know how the animated gifs on the mojolicious webpage were created?__
+__Does anybody know how the animated gifs on the Mojolicious webpage were created?__
 
-snapz pro x, quicktime and imagemagick. That's a long way: capture movie, split movie into frames, join frames into gif.
+Snapz pro x, Quicktime and ImageMagick. That's a long way: capture movie, split movie into frames, join frames into gif.
 
-__does mojo do any gzip/deflating?__
+__Does Mojo do any gzip/deflating?__
 
 No.
 
-__are there bridge examples anywhere ?__
+__Are there bridge examples anywhere ?__
 
-Here are some http://mojolicious.org/
+Here are some: http://mojolicious.org/
 
-__mojo distinguishes between /url/ and /url ?__
+__Does Mojo distinguish between /url/ and /url ?__
 
-Mojo does, routes not so much.
+Mojo does, routes -- not so much.
 
-__how is your documentation process is going?__
+__How is your documentation process going?__
 
-__is the mojolicious command line tool?__
+__Is there some Mojolicious command line tool?__
 
-Yes. For generating applications.
+Yes. For generating applications. It's called 'mojolicious'.
 
 __Where do you want bug reports?__
 
-IRC (#mojo at irc.perl.org) or mail list (http://lists.kraih.com/).
+IRC (#mojo at irc.perl.org) or mailing list (http://lists.kraih.com/).
 
-__mojo's license is AL, any reason you didn't go with same as perl? (GPL or AL)__
+__Mojo's license is AL, any reason you didn't go with same as Perl? (GPL or AL)__
 
     <@sri> i've been reading the licenses recently and i liked AL most
 
-__i just switched to mojo, i am redoing my personal website. should i use mojo or mojo lite for this task?__
+__I just switched to Mojo, I am redoing my personal website. Should I use Mojo or Mojolicious::Lite for this task?__
 
 Mojolicious::Lite would be enough for a personal website.
 
-__what exactly does the "shagadelic" method do?__
+__What exactly does the "shagadelic" method do?__
 
 Calls Mojolicious::Lite->start that calls Mojolicious->start that calls Mojolicious::Command->start.
 
-__am i doing something wrong, perldoc Mojo::Manual::Mojolicious does'nt contain anything useful?__
+__Am I doing something wrong, perldoc Mojo::Manual::Mojolicious doesn't contain anything useful?__
 
-__where is the documentation for mojo?__
+__Where is the documentation for mojo?__
 
-__how can i set content-type in lite app?__
+__How can I set content-type in Mojolicious::Lite app?__
 
 $self->res->headers->content_type()
 
@@ -126,13 +126,13 @@ __Anyone here use git tags?__
 
 __want to port mojo to perl6?__
 
-__Does unsupported mean "don't use" or just "swim at your own risk"?__
+__Does "unsupported" mean "don't use" or just "swim at your own risk"?__
 
 Both :)
 
-__a simple mojo wiki anyone?__
+__A simple Mojo wiki anyone?__
 
-Feel free to take wikilicious as a name.
+Feel free to take "wikilicious" as a name.
 
 __where is all this great documentation i've been hearing about?__
 
@@ -144,29 +144,29 @@ No. But CPAN has.
 
 __anyone awake here?__
 
-If nobody answers your question at the irc channel, don't worry, it will be answered when somebody gets up.
+If nobody answers your question at the IRC channel, don't worry, it will be answered when somebody gets up.
 
-__how do run Mojo as a cgi script, using a browser?__
+__How to run Mojo as a CGI script, using a browser?__
 
-shagadelic('cgi') or MyApp->start('cgi') at mojolicious script.
+Use shagadelic('cgi') or MyApp->start('cgi') in your Mojolicious script.
 
-__can't you use host => qr// with route?__
+__Can't you use host => qr// with route?__
 
 Take a look at routes conditions.
 
-__how would you redirect in mojo?__
+__How would you redirect in Mojo?__
 
 $self->return_to('http://my-new-url.com');
 
-__does mojo have a built-in way to add accessors to your app?__
+__Does Mojo have a built-in way to add accessors to your app?__
 
 use base 'Mojo::Base';
 
-__where do i define the db connection?__
+__Where do I define the db connection?__
 
 In sub process.
 
-__Does Mojolicous reload yourself after file changing?__
+__Does Mojolicious reload itself after file changing?__
 
 Set MOJO_RELOAD=1 or use --reload option.
 
@@ -174,13 +174,13 @@ __How to include other files inside epl?__
 
 $self->render_partial
 
-__is it a coinsidence that there is a Catalyst wiki called mojomojo?__
+__Is it a coincidence that there is a Catalyst wiki called mojomojo?__
 
 __Do you plan use Moose in Mojo?__
 
-Unlikely. Slow startup, countless prereqs and some being xs.
+Unlikely. Slow startup, countless prereqs and some being XS.
 
-__does Mojo::Loader catch syntax errors?__
+__Does Mojo::Loader catch syntax errors?__
 
 Of course it does.
 
@@ -196,7 +196,7 @@ __What's an attribute 'name' for? In routes. Where should I use it?__
 
 $self->url_for
 
-__is it possible with Mojo::JSON to check the syntax?__
+__Is it possible with Mojo::JSON to check the syntax?__
 
 No. No syntax check. But it dies on errors.
 
@@ -210,16 +210,16 @@ __do we have usable json in mojo yet?__
 
 __what is epl short for? english premier league?__
 
-__I want to custamize Mojo::Template encoding. Is there the way to do it through__
+__I want to customize Mojo::Template encoding. Is there the way to do it through__
 __Mojolicious?__
 
 __what's the latest status on mojolicious documentation?__
 
-__iI see you're about keeping it free of dependencies - how do you feel about people developing extensions?__
+__I see you're about keeping it free of dependencies - how do you feel about people developing extensions?__
 
 __I don't understand waypoint and bridge. When do I use waypoint and bridge?__
 
-__what for should i use html_escape and xml_escape?__
+__What should I use html_escape and xml_escape for?__
 
 __what do you mean by 'nothing works'?__
 
@@ -247,7 +247,7 @@ __anyone know how I can get the remote IP address within a Mojo controller?__
 
 __how do I access the transaction from within a handler in the controller?__
 
-__Has anyone used mojolicious and the Petal templating system together? Would it__
+__Has anyone used Mojolicious and the Petal templating system together? Would it__
 __be tricky to do?__
 
 __How to use MyApp::CARROT as controller?__
@@ -287,17 +287,17 @@ __Any ideas about how hard it would be to embed a mojo app in a catalyst app?__
 
 __How to create a "https" link via url_for?__
 
-__Is it available to create a full link (with http://) via url_for?__
+__Is it possible to create a full link (with http://) via url_for?__
 
 __MP3 streaming client?__
 
 __How to use ladders?__
 
-__anybody using mojo for high-trafic sites? What's the performance like?__
+__Is anybody using Mojo for high-traffic sites? What's the performance like?__
 
 __Is there a way to access the route's name from within the .ep templates?__
 
-__Mojolicious rules. Why people in the perl world don't unserstand this simple thing?__
+__Mojolicious rules. Why people in the Perl world don't understand this simple thing?__
 
 __What is the difference between dispatch() and process()?__
 
@@ -309,7 +309,7 @@ __Could someone tell me how to run Mojolicious with fastcgi?__
 
 __--address. It can't listen unix socket?__
 
-__what about nginx & mojo fcgi? Must it have something special in fastcgi paramenters?__
+__What about nginx & Mojo fcgi? Must it have anything special in fastcgi parameters?__
 
 __so what would be the fastest way to get up to speed on Mojo?__
 
@@ -317,7 +317,7 @@ __I want only 2 or 3 processes of fcgi, how to run? I tried --servers 2, but aga
 
 __btw, this is the most jabber I've seen on #mojo in a week. is it usually quiet?__
 
-__is there a mojo component to manage users authentifications and sessions ?__
+__Is there a Mojo component to manage user authentication and sessions ?__
 
 __why is mojo telling me "It looks like you don't have the Mojo Framework__
 __installed." even though I just installed it?__
@@ -334,15 +334,15 @@ __is there somewhere to paste?__
 
 __I just want to run a Mojo app on a single location within a site... is this possible?__
 
-__how can one add addional params when loading a plugin?__
+__How can one add additional params when loading a plugin?__
 
 __does Mojo::Client follow redirects?__
 
 __Can you explain to newbie how can i pass additional fcgi params to mojolicious app?__
 
-__Access to raw enviroments is not available?__
+__Is access to raw environment not available?__
 
-__How to run Mojolicious::Lite on different adderess:port?__
+__How to run Mojolicious::Lite on different address:port?__
 
 __Is there a page with list of sites build on mojo?__
 
