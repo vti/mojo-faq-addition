@@ -225,7 +225,7 @@ Of course we do. Take a look at Mojo::JSON.
 
 __What is epl short for? English premier league?__
 
-Embedded Perl lite;
+Embedded Perl lite.
 
 __I want to customize Mojo::Template encoding. Is there the way to do it through Mojolicious?__
 
@@ -302,7 +302,7 @@ You would have to build a custom renderer like MojoX::Renderer::TT.
 
 __How to use MyApp::CARROT as controller?__
 
-Since CARROT is not camelcase and can't be automatically converted from cattor, you should use
+Since CARROT is not camelcase and can't be automatically converted from carrot, you should use
 
     ->route(...)->to(class => 'CARROT');
 
