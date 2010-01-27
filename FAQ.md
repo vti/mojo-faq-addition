@@ -100,7 +100,7 @@ Yes. For generating applications. It's called 'mojolicious'.
 
 __Where do you want bug reports?__
 
-IRC (#mojo at irc.perl.org) or mailing list (http://lists.kraih.com/).
+IRC (#mojo at irc.perl.org) or mailing list (http://groups.google.com/group/mojolicious).
 
 __Mojo's license is AL, any reason you didn't go with same as Perl? (GPL or AL)__
 
@@ -108,7 +108,7 @@ __Mojo's license is AL, any reason you didn't go with same as Perl? (GPL or AL)_
 
 __I just switched to Mojo, I am redoing my personal website. Should I use Mojo or Mojolicious::Lite for this task?__
 
-Mojolicious::Lite would be enough for a personal website.
+Mojolicious::Lite is enough for a personal website.
 
 __What exactly does the "shagadelic" method do?__
 
@@ -120,7 +120,7 @@ __Where is the documentation for mojo?__
 
 __How can I set content-type in Mojolicious::Lite app?__
 
-$self->res->headers->content_type()
+    $self->res->headers->content_type()
 
 __Anyone here use git tags?__
 
@@ -136,15 +136,15 @@ Feel free to take "wikilicious" as a name.
 
 __where is all this great documentation i've been hearing about?__
 
-__stylish pdf mojo cheatsheet?__
+__Stylish pdf mojo cheatsheet?__
 
-__does mojo have an email module?__
+__Does mojo have an email module?__
 
-No. But CPAN has.
+No. But CPAN does.
 
-__anyone awake here?__
+__Is anyone awake here?__
 
-If nobody answers your question at the IRC channel, don't worry, it will be answered when somebody gets up.
+If nobody answers your question at the IRC channel, don't worry, it will be answered when somebody wakes up.
 
 __How to run Mojo as a CGI script, using a browser?__
 
@@ -156,11 +156,11 @@ Take a look at routes conditions.
 
 __How would you redirect in Mojo?__
 
-$self->return_to('http://my-new-url.com');
+    $self->return_to('http://my-new-url.com');
 
 __Does Mojo have a built-in way to add accessors to your app?__
 
-use base 'Mojo::Base';
+    use base 'Mojo::Base';
 
 __Where do I define the db connection?__
 
@@ -172,7 +172,7 @@ Set MOJO_RELOAD=1 or use --reload option.
 
 __How to include other files inside epl?__
 
-$self->render_partial
+    $self->render_partial
 
 __Is it a coincidence that there is a Catalyst wiki called mojomojo?__
 
@@ -188,76 +188,133 @@ __Where can I see an example of Mojolicious + MojoX::Session?__
 
 Look at MojoX::Session's distribution examples/ directory.
 
-__is there an easy way to change the templates base dir for Mojolicious::Lite?__
+__Is there an easy way to change the templates base dir for Mojolicious::Lite?__
 
-app->renderer->root('/foo/bar')
+    app->renderer->root('/foo/bar')
 
 __What's an attribute 'name' for? In routes. Where should I use it?__
 
-$self->url_for
+    $self->url_for('name')
 
 __Is it possible with Mojo::JSON to check the syntax?__
 
-No. No syntax check. But it dies on errors.
+No. No syntax check. But it sets ->error attribute on errors.
 
 __Whats best practice for mojo and mod_perl2?__
 
 __How to get a list of all names only of parameters?__
 
+    my @names = keys %{req->params->to_hash};
+
+or
+    my @names = $req->param;
+
 __Are you marcus ramburg?__
 
-__do we have usable json in mojo yet?__
+    <@marcus> huh?
+    <@marcus> I
+    <@marcus> am
+    <@marcus> not
+    <@marcus> ramburg!
 
-__what is epl short for? english premier league?__
+Please try to adoiv doing mistakes in people's names. This enrages them. If you are not sure, use a nickname.
 
-__I want to customize Mojo::Template encoding. Is there the way to do it through__
-__Mojolicious?__
+__Do we have usable json in mojo yet?__
 
-__what's the latest status on mojolicious documentation?__
+Of course we do. Take a look at Mojo::JSON.
+
+__What is epl short for? English premier league?__
+
+Embedded Perl lite;
+
+__I want to customize Mojo::Template encoding. Is there the way to do it through Mojolicious?__
+
+There is encoding option.
+
+__What's the latest status on mojolicious documentation?__
 
 __I see you're about keeping it free of dependencies - how do you feel about people developing extensions?__
 
+Extenstions are very welcome. There are already many of them. Search CPAN for MojoX namespace.
+
 __I don't understand waypoint and bridge. When do I use waypoint and bridge?__
+
+Bridges
+
+Sometimes it is necessary to call a method after another (e.g. authorization, data processing). That's what bridge is for.
+
+    # /blog
+    $r->bridge->to(controller => 'foo', action =>'auth')
+      ->route('/blog')->to(action => 'list');
+
+Foo::auth will be called before Foo::list. If Foo:auth does not return a true value, the chain will be broken and return without Foo::list being called.
+
+Waypoints
+
+Waypoint is something in between bridges and nested routes. It can match even if it's not an endpoint, but will behave just like route if children are matching too.
+
+    # /books
+    my $b = $r->waypoint('/books')->to(controller => 'books', action => 'list');
+
+    # /books/1
+    $b->route('/:id', id => qr/\d+/)->to(action => 'view');
 
 __What should I use html_escape and xml_escape for?__
 
-__what do you mean by 'nothing works'?__
+xml_escape is the faster and simpler version of html_escape which escapes every single entitie. html_escape uses all xhtml 1.0 entities, xml_escape only & < > " '.
 
-__how can I help you?__
-
-__how's the new docs coming along?__
+__How's the new docs coming along?__
 
 __How to render data/plainfile.html in template?__
 
-__web in a box?__
+    <%= $self->render_partial('data/plainfile.html') %>
 
-__Can I include a second template in a Mojo::Template file?__
+__Web in a box?__
 
-__how's your month of docs going?__
+    <@sri> don't push the button!
+    <@sri> no wait, that was a different box...
 
 __How to get an absolute path of app home?__
 
+    app->home;
+
 __How to add charset utf-8 by default in headers?__
 
-__how do I get params inside a controller?__
+    $self->renderer->types->type(html => 'text/html; charset=utf-8');
+
+__How do I get params inside a controller?__
+
+    $self->req->param('foo');
 
 __Where is the test server's document root? Is it just in whatever directory you invoke it?__
 
-__anyone know how I can get the remote IP address within a Mojo controller?__
+__Anyone know how I can get the remote IP address within a Mojo controller?__
 
-__how do I access the transaction from within a handler in the controller?__
+    $self->tx->remote_address;
 
-__Has anyone used Mojolicious and the Petal templating system together? Would it__
-__be tricky to do?__
+__How do I access the transaction from within a handler in the controller?__
+
+    $self->tx;
+
+__Has anyone used Mojolicious and the Petal templating system together? Would it be tricky to do?__
+
+You would have to build a custom renderer like MojoX::Renderer::TT.
 
 __How to use MyApp::CARROT as controller?__
 
-__Anyone know how I can stuff raw HTML into a Mojolicious template without it__
-__getting escaped?__
+Since CARROT is not camelcase and can't be automatically converted from cattor, you should use
+
+    ->route(...)->to(class => 'CARROT');
+
+__Anyone know how I can stuff raw HTML into a Mojolicious template without it getting escaped?__
+
+    <%== ...
 
 __Does ep stand for something?__
 
-__so I can easily convert a cgi based app to mojo ?__
+Embedded Perl.
+
+__So I can easily convert a CGI.pm based app to mojo ?__
 
 __when do you plan 1.0?__
 
