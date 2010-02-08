@@ -314,9 +314,11 @@ __Does ep stand for something?__
 
 Embedded Perl.
 
-__So I can easily convert a CGI.pm based app to mojo ?__
+__So I can easily convert a CGI.pm based app to mojo?__
 
-__when do you plan 1.0?__
+__When do you plan 1.0?__
+
+Right after the documentation.
 
 __Does anyone know why I might be having trouble accessing files within my 'public' directory?  For some reason I'm unable to get my public js and css files to load.__
 
@@ -326,27 +328,74 @@ __Bridge is used before route. Is it available to run action after route?__
 
 __how do I set a cookie from a mojolicious controller?__
 
-__how do I do an external redirect from a controller?__
+__How do I do an external redirect from a controller?__
 
-__Does setting $self->res->body bypass the rendering in MojoX::Dispatcher::Routes::dispatch ?__
+    $self->redirect_to('my-action');
+    $self->redirect_to('http://absolute.url');
 
-__what happens when you do $tx->pause? switching to other transactions?__
+__Does setting $self->res->body bypass the rendering in MojoX::Dispatcher::Routes::dispatch?__
+
+No, response code should be added also. But for rendering a text
+
+    $self->render_text('foo');
+
+can be used.
+
+__What happens when you do $tx->pause? Switching to other transactions?__
+
+Flow just goes on, it sets the tx in hibernate mode (can't write) and the handler will end normally.
 
 __Anyone have a favourite i18n module that's nice to use / plays nice with mojo(licious)?__
 
-__there's a mojo modules page?__
+Take a look at MojoX::Locale::Maketext.
 
-__going for the advent calendar plan after all?__
+__Is there a Mojo modules page?__
 
-__doesn't mojo have an async http client built in now?__
+Not yet. Feel free to contribute.
+
+__Going for the advent calendar plan after all?__
+
+    <@sri> marcus: no way
+
+__Doesn't mojo have an async http client built in now?__
+
+Yes. Mojo::Client is fully async.
 
 __Any ideas about how hard it would be to embed a mojo app in a catalyst app?__
+
+There is Catalyst::Engine::Mojo, it could be outdated, but is a good example.
 
 __How to create a "https" link via url_for?__
 
 __Is it possible to create a full link (with http://) via url_for?__
 
+    $self->url_for('some-action')->to_abs;
+
 __MP3 streaming client?__
+
+    #!/usr/bin/perl
+
+    use Mojo::Client;
+    use Mojo::Transaction::HTTP;
+
+    my $url = shift @ARGV;
+    my $handler = 'mpg123 -';
+
+    open(HANDLER, "|$handler") or die "Cannot pipe input to $handler: $!\n";
+
+    my $tx = Mojo::Transaction::HTTP->new;
+    $tx->req->method('GET');
+    $tx->req->url->parse($url);
+    $tx->res->body(
+        sub {
+            my ($res, $chunk) = @_;
+            print HANDLER $chunk;
+        }
+    );
+
+    Mojo::Client->new->process($tx);
+
+    close HANDLER;
 
 __How to use ladders?__
 
