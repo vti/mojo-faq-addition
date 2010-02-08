@@ -437,4 +437,12 @@ __are there reserved stash keys?__
 
 __Why post_form, not just form or post_data?__
 
+__How to use other than UTF-8 encoding in MojoX::Renderer::TT?__
+
+Here is an example how to serve cp1251 templates (by Alexander *nordicdyno* Orlovskiy)
+
+    MojoX::Renderer::TT->build(
+        mojo             => $self,
+        template_options => {UNICODE => 0, ENCODING => 'windows-1251'}
+    );
 
