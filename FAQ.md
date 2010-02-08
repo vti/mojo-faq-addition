@@ -217,7 +217,7 @@ __Are you marcus ramburg?__
     <@marcus> not
     <@marcus> ramburg!
 
-Please try to adoiv doing mistakes in people's names. This enrages them. If you are not sure, use a nickname.
+Please try to avoid doing mistakes in people's names. This enrages them. If you are not sure, use a nickname.
 
 __Do we have usable json in mojo yet?__
 
