@@ -46,7 +46,7 @@ Pastelicious paste service
 
 __Does Mojo natively support sessions?__
 
-No. But you can use MojoX::Session.
+Yes. Or you can use MojoX::Session instead.
 
 __How can I help out or otherwise support this project?__
 
