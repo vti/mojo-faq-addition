@@ -156,7 +156,7 @@ Take a look at routes conditions.
 
 __How would you redirect in Mojo?__
 
-    $self->return_to('http://my-new-url.com');
+    $self->redirect_to('http://my-new-url.com');
 
 __Does Mojo have a built-in way to add accessors to your app?__
 
