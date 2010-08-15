@@ -24,7 +24,7 @@ Not really.
 
 __Didn't someone have a vim syntax for epl?__
 
-http://github.com/korshak/Vim-Mojo-Data-syntax
+http://www.vim.org/scripts/script.php?script_id=3168
 
 __Okay, where the actual manual?__
 
