@@ -132,7 +132,7 @@ Both :)
 
 __A simple Mojo wiki anyone?__
 
-Feel free to take "wikilicious" as a name.
+http://github.com/shoorick/mojowka
 
 __where is all this great documentation i've been hearing about?__
 
@@ -140,11 +140,11 @@ __Stylish pdf mojo cheatsheet?__
 
 __Does mojo have an email module?__
 
-No. But CPAN does.
+MojoX::Renderer::Mail
 
 __Is anyone awake here?__
 
-If nobody answers your question at the IRC channel, don't worry, it will be answered when somebody wakes up.
+If nobody answers your question on the IRC channel, don't worry, it will be answered when somebody wakes up.
 
 __How to run Mojo as a CGI script, using a browser?__
 
